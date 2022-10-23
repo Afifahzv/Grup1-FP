@@ -1,0 +1,774 @@
+:root {
+  --mainColor : #0b2239;
+  --secondaryColor: #000000;
+  --acsentColor: #f8f4fc;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+  background-color: var(--acsentColor);
+/*   width: 1280px;
+  height: 720px; */
+  font-family: 'Poppins';
+  margin: 0;
+}
+
+.current{
+  font-weight: 600;
+  color: #313131;
+}
+/* Navbar */
+.halamanhome{
+  width: fit-content;
+  height: fit-content;
+  background-color: var(--mainColor);
+}
+.divider:after,
+.divider:before {
+content: "";
+flex: 1;
+height: 1px;
+background: #eee;
+}
+.footerr{
+  background-color: var(--mainColor);
+}
+.kontenlogin{
+  height: 560px;
+  background-color: #fff;
+}
+#kontenregister{
+  height: 600px;
+}
+.navbar-brand{
+  font-family: 'Poppins';
+  font-weight: 800;
+  font-size: 28px;
+  color: #fff;
+}
+.navbar{
+  background-color: var(--mainColor);
+  width: 0 auto;
+  margin-top: 0px;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.loginn:hover{
+  color: #fff;
+}
+#text-center{
+  font-family: 'Poppins';
+}
+
+#login-page{
+  font-family: 'Poppins';
+  background-color: #fff;
+  margin-top: 70px;
+}
+#register-page{
+  font-family: 'Poppins';
+  background-color: #fff;
+  margin-top: 60px;
+
+}
+.navbar:hover{
+  color: #4ad295;
+}
+.navbar-nav{
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 2px;
+}
+.btn-primary1{
+color: var(--acsentColor);
+font-size: 16px;
+background-color: var(--secondaryColor);
+border-color: var(--secondaryColor);
+}
+.btn-primary4, 
+.btn-primary4:hover {
+  margin-top: 20px;
+  color: #fff;
+  font-size: 16px;
+  background-color: var(--secondaryColor);
+  border-color: var(--secondaryColor);
+}
+.btn-primary, 
+.btn-primary:hover {
+  font-weight: 600;
+font-size: 16px;
+  background-color: var(--secondaryColor);
+  border-color: var(--secondaryColor);
+}
+.btn-primary6, 
+.btn-primary6:hover {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: var(--secondaryColor);
+  border-color: var(--secondaryColor);
+  align-items: center;
+}
+.btn-primary5{
+  color: #fff;
+  background-color: var(--mainColor);
+}
+.btn-primary:active,
+      .btn-primary:focus {
+          color: #fff;
+          background-color: var(--secondaryColor) !important;
+          border-color: var(--secondaryColor) !important;
+          box-shadow: 0 0 0 0.2rem #4ad295 !important;
+      }
+
+.navbar-nav, .nav-item, a{
+color: var(--acsentColor);
+}
+.buttonprofile{
+margin-right: 100px;
+}
+
+.navigasi{
+margin-top: 20px;
+line-height: 1.em;
+}
+.teks{
+font-weight: 500;
+color: #757575;
+margin-top: 60px;
+line-height: 20px;
+}
+
+
+
+/*isi konten*/
+#slides{
+  margin-top: 60px
+}
+.img-fluid{
+margin-right: 200px;
+}
+.textslides{
+  width:800;
+}
+.login{
+color: var(--secondaryColor);
+}
+
+.text-start{
+color: #464646;
+}
+.textslides{
+margin-bottom: 70px;
+}
+/*end konten*/
+
+/* slides */
+/* #carouselExampleIndicators{
+margin-top: -50px;
+margin-bottom: 20px;
+}
+.carousel{
+margin-top: 50px;
+margin-bottom: 60px;
+width: 100%;
+} */
+
+.carousel-item {
+  transition: transform 0.6s ease-in-out;
+}
+
+.carousel-fade .active.carousel-item-start,
+.carousel-fade .active.carousel-item-end {
+  transition: opacity 0s 2.6s;
+}
+.textslides{
+text-align: center;
+font-weight: bold;
+font-size: 110px;
+}
+/* end slides */
+
+/* brand */
+#brand{
+  height: 500px;
+margin-top: 80px;
+}
+hr{
+width: 47%;
+color: var(--secondaryColor);
+margin: 0 auto;
+opacity: 100%;
+margin-top: -14px;
+margin-bottom: 120px;
+}
+.judul{
+  color: var(--secondaryColor);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.pic{
+width: 127px;
+height: 161px;
+margin: auto;
+margin-top: -100px;
+
+}
+.button{
+background-color: var(--mainColor);
+border-color: var(--mainColor);
+margin: 0 auto;
+margin-left: 100px;
+}
+/* end brand */
+
+/* keluaran terbaru */
+#popular{
+height: 700px;
+margin-top: 0px;
+}
+#popular1{
+  margin-top: 70px;
+  height: 1200px;
+}
+
+.popularrow{
+margin-top: -50px;
+}
+.gambarcard{
+  width: 365px;
+  margin-left: -10px;
+  margin-top: 0px;
+}
+.cards1{
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 2px 0 rgba(79, 79, 79, 0.2);
+  transition: 0.5s;
+  width: 32%;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+.cards1:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.popularrow1{
+margin-top: 20px;
+}
+.popularrow2{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.card-title{
+background-color: var(--mainColor);
+height: 40px;
+margin-top: -1px;
+}
+h5{
+  font-weight: 600;
+margin-top: 10px;
+text-align: center;
+font-size: 18px;
+color: #10100d;
+}
+.card-text{
+font-size: 14px;
+color: #878787;
+text-align: center;
+font-weight: 500;
+
+}
+.follow{
+background-color: var(--mainColor);
+border-color: var(--mainColor);
+align-items: center;
+text-align: center;
+}
+.buttoncourses{
+width: 365px;
+margin-left: -10px;
+margin-top: 0px;
+background-color: var(--mainColor);
+border-color: var(--mainColor);
+}
+.buttoncourses1{
+  color:#fff;
+width: 355px;
+align-content: center;
+margin: 0 auto;
+background-color: var(--mainColor);
+border-color: var(--mainColor);
+}
+.buttoncrs{
+width: 200px;
+
+}
+.buttoncert{
+  width: fit-content;
+  background-color: var(--mainColor);
+  border-color: var(--mainColor);
+  margin: auto;
+}
+.garis{
+width: 360px;
+}
+
+
+/* end keluaran terbaru */
+
+.konversi{
+  margin-top: 70px;
+}
+.dropdown-toggle:hover{
+  color: var(--mainColor);
+}
+
+
+/*form biodata */
+.kontak{
+  margin-top: 10px;
+}
+.col-md-6{
+color: #6c757d;
+}
+.col-12{
+color: #616161;
+}
+input{
+width: 30px;
+height: 40px;
+}
+
+/* footer */
+.copyright{
+text-align: center;
+color: var(--acsentColor);
+margin-top: 20px;
+margin-bottom: 20px;
+}
+a{
+text-decoration: none;
+}
+a:hover{
+color: var(--secondaryColor);
+}
+.buttoncrs{
+color: #fff;
+margin: auto;
+width: 180px;
+font-size: 16px;
+margin-left: 80px;
+align-items: center;
+margin-bottom: 20px;
+background-color: var(--mainColor);
+border-color: var(--mainColor);
+}
+h4{
+font-size: 20px;
+font-weight: bold;
+color: var(--acsentColor);
+}
+.teksfooter{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+.garisfooter{
+width: 130px;
+margin-left: 0;
+margin-top: -10px;
+margin-bottom: 30px;
+}
+.garisfooter2{
+width: 127px;
+margin-left: 0;
+margin-top: -10px;
+margin-bottom: 30px;
+}
+.garisfooter3{
+width: 84px;
+margin-left: 0;
+margin-top: -10px;
+margin-bottom: 30px;
+}
+.list-unstyled{
+color: var(--secondaryColor);
+}
+
+video{
+margin-top: 30px;
+}
+.gambar-circle{
+  border-radius: 100%;
+  border: 10px solid #fff;
+  box-shadow: 0 2px 10px rgba(118, 27, 27, 0.1) !important;
+  width: 150px;
+  height: 150px;
+}
+.img-circle{
+  margin-top: 80px;
+}
+.shadow {
+	box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.profile-tab-nav{
+	min-width:250px;
+}
+.tab-content{
+	flex:1;
+}
+label{
+  font-weight: 500;
+}
+.form-profile{
+  font-weight: 400;
+  color: #333;
+  margin-bottom: 6px;
+}
+#profilee{
+  margin-top: 70px;
+}
+
+/* end footer */
+.mobil{
+  margin-left: 40px;
+  width: 350px;
+  margin-left: 5px;
+}
+.cardya{
+  background-color: #fff;
+}
+#login{
+  width: max-content;
+}
+.navbar-toggler{
+  background-color: var(--mainColor);
+}
+.navbar-toggler-icon{
+  background-color: #4ad295;
+}
+.navbar-collapse{
+  margin-top: -2px;
+  margin-bottom: 6px;
+  font-weight: 100;
+  }
+
+  /* Navbar */
+.nav-link:active{
+  color: var(--mainColor);
+}
+.nav-link:hover{
+  color: var(--mainColor);
+}
+  .nav-item{
+    margin-top: 10px;
+  }
+
+  /* about */
+  .h1-PP{
+    font-family: 'Kadwa', serif;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: #000000;
+    margin-top: 120px;
+    margin-bottom: 5px;
+}
+.h1-2{
+  font-family: 'Kadwa', serif;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: #000000;
+  margin-top: 120px;
+  margin-bottom: 5px;
+}
+
+.para-pp{
+    font-family: 'Kadwa', serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #474545;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    text-align: justify;
+}
+.para-pp2{
+    font-family: 'Kadwa', serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+    background-color: floralwhite;
+}
+
+/* .imgabout{
+  width: 20px;
+  height: 20px;
+} */
+
+
+  .h1-pp{
+
+    background-color: white;
+  }
+
+  #about2{
+    margin-top: 70px;
+    height: 960px;
+  }
+
+  .cardus{
+    margin-top: 20px;
+  }
+ 
+
+@media (max-width: 575.98px) {
+  #contactpage{
+    height: 880px;
+  }
+  #contact{
+    height: 780px;
+  }
+  #profilee{
+    height: 1280px;
+  }
+  #profilepage{
+    height: 1380px;
+  }
+  .img-circle{
+    margin-top: -18px;
+  }
+
+  #popular{
+    display: none ;
+  }
+  #brand{
+    height: 1200px;
+  }
+  .buttoncrs{
+    margin-left: 80px;
+  }
+  .mobil{
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+  .container, .container-sm {
+    max-width: 540px;
+  }
+  .cardya{
+    width: 360px;
+    margin-left: -110px;
+  }
+  video{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+  }
+.cert{
+  height: 800px;
+}
+  #getcert{
+    height: 400px;
+  }
+.loginn{
+  display: none;
+}
+
+.seemore{
+ border-color: var(--secondaryColor);
+ color: var(--secondaryColor);
+ margin: 0 auto;
+ margin-left: 37%;
+}
+.seemore:hover{
+  background-color: var(--mainColor);
+  color: var(--secondaryColor);
+}
+.buttoncourses1{
+display: none;
+  }
+  .bordercourse{
+    margin-bottom: 20px;
+    border-color: #333;
+  }
+  #university-list{
+    height: 1700px;
+  }
+  .navbar{
+    margin-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #4ad295;
+  }
+  .navbar-toggler{
+    background-color: var(--mainColor);
+  }
+  .navbar-toggler-icon{
+    background-color: #4ad295;
+    margin: 0 auto;
+  }
+  .navbar-collapse,.navbar-expand-lg{
+    background-color: var(--mainColor);
+    margin: 0 auto;
+  }
+  .imglogin{
+    display: none;
+  }
+  .kontenlogin{
+    height: 560px;
+  }
+  #kontenregister{
+    height: 670px !important;
+  }
+  .btnlogin{
+    width: 70px;
+    margin-bottom: 20px;
+  }
+  .navbarr{
+    margin-bottom: -20px;
+  }
+  .navbarrr{
+    margin-top: -10px;
+  }
+  .popularrow2{
+    display: none;
+  }
+  .cards1{
+    width: 90%;
+    margin: 0 auto !important;
+    align-items: center;
+    margin-bottom: 30px !important;
+  }
+  .gambarcard{
+    margin-left: 0 auto;
+    width: 304px;
+  }
+  .buttoncourses{
+    margin-left: 0 auto;
+    width: 304px;
+  }
+  .btn-primary{
+    align-items: center !important;
+  }
+  .btn-primary6{
+    margin-left: 70px;
+  }
+}
+@media (max-width: 767.98px) { 
+  .textslides{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .navbar{
+    margin-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #4ad295;
+  }
+  .navbar-toggler{
+    background-color: var(--mainColor);
+  }
+  .navbar-toggler-icon{
+    background-color: #4ad295;
+    margin: 0 auto;
+  }
+  .navbar-collapse,.navbar-expand-lg{
+    background-color: var(--mainColor);
+    margin: 0 auto;
+  }
+  .imglogin{
+    display: none;
+  }
+  .kontenlogin{
+    height: 560px;
+  }
+  .btnlogin{
+    width: 70px;
+    margin-bottom: 20px;
+  }
+  .navbarr{
+    margin-bottom: -20px;
+  }
+  .navbarrr{
+    margin-top: -10px;
+  }
+  .btnlogin{
+    width: 40px;
+    margin-bottom: 20px;
+  }
+  
+
+ }
+@media (max-width: 991.98px) { 
+  .textslides{
+    text-align: center;
+    margin: 0 auto;
+    margin-left: -50px;
+  }
+  #popular{
+    display: none;
+  }
+  #brand{
+    width: 100%;
+    height: 1200px;
+  }
+  .mobil{
+    margin-top: 10px;
+    margin-bottom: 100px;
+  }
+  .bordercourse3{
+    display: none;
+  }
+  .buttoncourses1{
+    margin: 0 auto;
+    width: 335px;
+    margin-top: -2px;
+    background-color: var(--mainColor);
+    border-color: var(--mainColor);
+    }
+    .popularrow1{
+      margin-bottom: 10px;
+    }
+    #popular1{
+      height: 2000px;
+    }
+    video{
+      width: 100%;
+      height: 100%;
+      margin-top: 20px;
+    }
+    .gambarlog{
+      display: none;
+    }
+    .imglogin{
+      display: none;
+    }
+    #login-page{
+      height: 500px;
+    }
+    .btnlogin{
+      width: 80px;
+      margin-bottom: 20px;
+    }
+    #kontenlogin{
+      height: 2000px;
+    }
+
+ }
+
