@@ -161,6 +161,14 @@ margin-right: 200px;
 color: var(--secondaryColor);
 }
 
+.card-title{
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+}
+
 .text-start{
 color: #464646;
 }
