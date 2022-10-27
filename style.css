@@ -148,6 +148,19 @@ line-height: 20px;
 
 
 /*isi konten*/
+.project-list {
+  background: #424147;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* ul{
+  list-style: none;
+} */
+
 #slides{
   margin-top: 60px
 }
@@ -249,6 +262,9 @@ margin-top: 0px;
   height: 1200px;
 }
 
+.row{
+  color: var(--mainColor);
+}
 .popularrow{
 margin-top: -50px;
 }
