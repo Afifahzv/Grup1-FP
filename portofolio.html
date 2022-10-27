@@ -122,7 +122,27 @@
                 </div>
             </div>
 
-            <h5>Dapatkan harga mobil terbaik dengan proses yang mudah & cepat</h5>
+            <div class="row">
+              <div class="col-8 offset-2 mt-5">
+                <p class="d-inline galerystle">Gallery</p>
+                <div class="buttonKategori mt-3">
+                  <button type="button" class="btn btn-primary btn-cat">
+                    <a href="./portofolio.html" class="text-white">ALL</a>
+                  </button>
+                  <button type="button" class="btn btn-primary btn-cat">
+                    <a href="./review/mobil.html" class="text-white">Mobil</a>
+                  </button>
+                  <button type="button" class="btn btn-primary btn-cat">
+                    <a href="./review/review.html" class="text-white">Review</a>
+                  </button>
+                  <button type="button" class="btn btn-primary btn-cat">
+                    <a href="./review/FP-1.html" class="text-white">FP-1</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <h5 class="mt-5">Dapatkan harga mobil terbaik dengan proses yang mudah & cepat</h5>
 
             <div class="row justify-content-center mt-3">
               <div class="col-md-4 mb-3">
@@ -496,6 +516,132 @@
             duration: 2000,
         });
     </script>
+
+<script>
+  const gallerys = [
+  {
+    Image: "img/toyota-vios.jpg",
+    category: "Kargo"
+  },
+  {
+    Image: "img/ferarri.png",
+    category: "Kargo"
+  },
+  {
+    Image: "img/bugatti.png",
+    category: "Bangunan"
+  },
+  {
+    Image: "img/bmw.png",
+    category: "Bangunan"
+  },
+  {
+    Image: "img/bentley.png",
+    category: "Kegiatan"
+  },
+  
+  ];
+
+  const container = document.querySelector(".card-container");
+  const buttons = document.querySelectorAll(".btn-cat")
+  
+  function render(array){
+    let row = Math.ceil(array.length / 3);
+    
+    for(let i = 1; i<=row; i++){
+      
+      let div = document.createElement('div')
+      div.className = 'row my-4'
+      div.id = i
+      container.append(div)
+      
+      if(i == 1 ){
+        
+        if(array.length <= 3){
+          for(let j = 0; j < array.length; j++){
+            let col = document.createElement('div')
+            col.className = "col-4"
+            div.append(col)
+            
+            let img = document.createElement('img')
+            img.src = array[j].Image
+            img.className = "w-100 h-100  rounded-3 hover-img"
+            img.setAttribute('data-bs-toggle','modal' )
+            img.setAttribute('data-bs-target','#exampleModal' )
+            img.onclick = function(){
+              let modalImg =document.getElementById('modalImg')
+              modalImg.src = array[j].Image
+              modalImg.className ='img-fluid'
+            }
+            col.append(img)
+          }
+        }else{
+          for(let j = 0; j < 3; j++){
+            let col = document.createElement('div')
+            col.className = "col-4"
+            div.append(col)
+            
+            let img = document.createElement('img')
+            img.src = array[j].Image
+            img.className = "w-100 h-100  rounded-3 hover-img"
+            img.setAttribute('data-bs-toggle','modal' )
+            img.setAttribute('data-bs-target','#exampleModal' )
+            img.onclick = function(){
+              let modalImg =document.getElementById('modalImg')
+              modalImg.src = array[j].Image
+              modalImg.className ='img-fluid'
+            }
+            col.append(img)
+          }
+        }
+        
+      }else{
+        for(let j = 3; j < 5; j++){
+          
+          let col = document.createElement('div')
+          col.className = "col-4"
+          div.append(col)
+          
+          let img = document.createElement('img')
+          img.src = array[j].Image
+          img.className = "w-100 h-100  rounded-3 hover-img"
+          img.setAttribute('data-bs-toggle','modal' )
+          img.setAttribute('data-bs-target','#exampleModal' )
+          img.onclick = function(){
+            let modalImg =document.getElementById('modalImg')
+            modalImg.src = array[j].Image
+            modalImg.className ='img-fluid'
+          }
+          col.append(img)
+          
+          
+        }
+      }
+    }
+
+  }
+  
+
+  render(gallerys)
+  
+  buttons.forEach((button) =>{
+    button.addEventListener("click", () =>{
+      let newGaller =[];
+      
+      if (button.innerText === "All"){
+        newGaller = gallerys
+      }else{
+        newGaller = gallerys.filter((el) =>{
+          return el.category === button.innerText
+        }) 
+      }
+      
+      container.innerHTML ="";
+      render(newGaller)
+      
+    })
+  })
+</script>
     
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
